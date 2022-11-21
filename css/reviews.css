@@ -1,0 +1,33 @@
+.reviews__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews__item {
+  display: inline-block;
+  text-align: center;
+  width: 1080px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+.reviews__item:last-child {
+  margin-bottom: 0;
+}
+
+.reviews__figure {
+  float: left;
+}
+
+.reviews__image {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.reviews__text {
+  padding-top: 60px;
+  text-align: left;
+  line-height: 28px;
+}

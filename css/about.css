@@ -1,0 +1,76 @@
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about__subscription {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+.about__paragraph {
+  line-height: 28px;
+}
+
+.about__paragraph:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.about__image {
+  margin-right: 70px;
+}
+
+.quote {
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  quotes: "\201C" "\201D";
+}
+
+.quote__text {
+  display: inline-block;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 50px;
+  width: 400px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.quote:before {
+  display: inline-block;
+  vertical-align: top;
+  content: open-quote;
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  margin-right: 9px;
+}
+
+.quote__text:after {
+  content: close-quote;
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.quote__cite {
+  display: inline-block;
+  width: 380px;
+  vertical-align: top;
+  float: right;
+}
+
+.quote__name {
+  display: inline-block;
+  width: 279px;
+  float: right;
+  line-height: 28px;
+}
+
+.quote__image {
+  display: inline-block;
+}

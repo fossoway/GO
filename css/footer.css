@@ -1,3 +1,7 @@
+.footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
 .footer__title {
   font-size: 40px;
   font-weight: 700;
@@ -39,4 +43,22 @@
 
 .social__link {
   margin-right: 27px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  flex-basis: 160px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }

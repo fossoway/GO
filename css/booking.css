@@ -1,6 +1,114 @@
+.booking {
+  background-color: #440F51;
+}
+
 .booking__title {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.booking__fieldset {
+  display: flex;
+}
+
+.booking__fieldset-column {
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.booking__fieldset-wrap {
+  flex-wrap: wrap;
+}
+
+.booking__option-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.booking__wrapper {
+  flex-basis: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+
+.booking__fieldset-halls {
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.booking__choice {
+  flex-basis: 280px;
+}
+
+.booking__choice-no-radio {
+  display: none;
+}
+
+.booking__label-button {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 55px;
+  width: 250px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.booking__sub {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.booking__sub-halls {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.booking__option {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.booking__fieldset-add {
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.booking__choice-shrink {
+  max-width: 134px;
+  margin-bottom: 16px;
+}
+
+.booking__field {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.booking__push {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.booking__button {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
 }

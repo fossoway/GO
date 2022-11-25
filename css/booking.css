@@ -111,4 +111,9 @@
   border-radius: 10px;
   width: 300px;
   height: 60px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
 }

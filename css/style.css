@@ -37,6 +37,10 @@ a {
   color: inherit;
 }
 
+a:focus {
+  outline: 1px solid #CD06FF;
+}
+
 ul, ol {
   list-style: none;
   padding: 0;

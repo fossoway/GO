@@ -1,3 +1,11 @@
+.social__icon:hover > path {
+  fill: #EADEED;
+}
+
+.social__icon:active > path {
+  fill: #CD06FF;
+}
+
 .footer {
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }

@@ -1,3 +1,35 @@
+.booking__choice:focus {
+  outline: 2px solid #CD06FF;
+}
+
+.booking__button:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.booking__button:active {
+  background-color: #EADEED;
+}
+
+.booking__button:focus {
+  outline: 3px solid #6C0287;
+}
+
+.booking__label-button:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.booking__choice-no-radio:checked + .booking__label-button {
+  color: #FFFFFF;
+  background-color: #6C0287;
+  border: 3px solid #FFFFFF;
+}
+
+.booking__label-button:focus {
+  outline: 3px solid #640AA3;
+}
+
 .booking {
   background-color: #440F51;
 }
@@ -59,6 +91,7 @@
   width: 250px;
   padding-top: 7px;
   text-align: center;
+  color: #000000;
 }
 
 .booking__sub {
@@ -72,7 +105,6 @@
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .booking__option {

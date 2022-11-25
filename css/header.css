@@ -1,6 +1,51 @@
+.header__button:hover {
+  background-color: #6C0287;
+  border: 3px solid #6C0287;
+}
+
+.header__button:active {
+  background-color: #640AA3;
+  border: 1px solid #000000;
+}
+
+.header__button:focus {
+  background-color: #6C0287;
+  outline: 1px solid #CD06FF;
+}
+
+.header__anchor:hover {
+  background-color: #840AA3;
+}
+
+.header__anchor:active {
+  background-color: #640AA3;
+}
+
+.header__anchor:focus {
+  background-color: #840AA3;
+}
+
+.header__push:hover {
+  fill: #ffffff;
+}
+
+.header__push:hover > rect {
+  fill: #6C0287;
+}
+
+.header__push:active > circle {
+  fill: #CD06FF;
+  stroke: #CD06FF;
+}
+
+.header__push:focus {
+  outline: #CD06FF solid 1px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .navigation__list {
@@ -28,8 +73,8 @@
   display: block;
 }
 
-.logo__image {
-  margin-bottom: 50px;
+.logo {
+  height: 66px;
 }
 
 .header__title {

@@ -6,6 +6,11 @@
   fill: #CD06FF;
 }
 
+.social__icon > path {
+  transition-duration: 0.3s;
+  transition-property: fill;
+}
+
 .footer {
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }

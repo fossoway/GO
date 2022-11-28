@@ -1,3 +1,8 @@
+.services__item:hover {
+  transform: scale(1.1);
+  box-shadow:0 0 10px #CD06FF;
+}
+
 .services__title {
   max-width: 700px;
   font-size: 40px;
@@ -21,6 +26,7 @@
   padding-left: 40px;
   padding-bottom: 20px;
   align-items: flex-end;
+  transition-duration: 1s;
 }
 
 .services__item-vr {

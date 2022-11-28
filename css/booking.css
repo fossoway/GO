@@ -77,6 +77,8 @@
 
 .booking__choice {
   flex-basis: 280px;
+  transition-duration: 0.2s;
+  transition-property: outline;
 }
 
 .booking__choice-no-radio {
@@ -92,6 +94,9 @@
   padding-top: 7px;
   text-align: center;
   color: #000000;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color, outline;
 }
 
 .booking__sub {
@@ -148,4 +153,6 @@
   line-height: 28px;
   text-transform: uppercase;
   color: #6C0287;
+  transition-duration: 0.3s;
+  transition-property: background-color;
 }

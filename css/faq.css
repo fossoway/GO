@@ -44,6 +44,8 @@
   right: 50px;
   background-image: url("../img/open.svg");
   background-size: contain;
+  transition-duration: 0.6s;
+  transition-property: background-image;
 }
 
 .faq__item:nth-child(odd):before {
@@ -54,6 +56,8 @@
   right: 50px;
   background-image: url("../img/open-purple.svg");
   background-size: contain;
+  transition-duration: 0.6s;
+  transition-property: background-image;
 }
 
 .faq__item:last-child {

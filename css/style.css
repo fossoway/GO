@@ -15,8 +15,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff;
-  background-color: #1B1A1B;
+  color: var(--main-color, #ffffff);
+  background-color: var(--main-background, #1B1A1B);
 }
 
 

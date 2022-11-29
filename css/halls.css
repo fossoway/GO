@@ -30,7 +30,7 @@
 }
 
 .halls__name {
-  color: #ffffff;
+  color: var(--main-color, #ffffff);
   font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;

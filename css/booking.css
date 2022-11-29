@@ -1,37 +1,37 @@
 .booking__choice:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--main-border, #CD06FF);
 }
 
 .booking__button:hover {
-  background-color: #EADEED;
-  border: 3px solid #6C0287;
+  background-color: var(--hover-icon, #EADEED);
+  border: 3px solid var(--main-button, #6C0287);
 }
 
 .booking__button:active {
-  background-color: #EADEED;
+  background-color: var(--hover-icon, #EADEED);
 }
 
 .booking__button:focus {
-  outline: 3px solid #6C0287;
+  outline: 3px solid var(--main-button, #6C0287);
 }
 
 .booking__label-button:hover {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
+  background-color: var(--hover-icon, #EADEED);
+  border: 3px solid var(--background-button, #640AA3);
 }
 
 .booking__choice-no-radio:checked + .booking__label-button {
-  color: #FFFFFF;
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
+  color: var(--main-color, #FFFFFF);
+  background-color: var(--main-button, #6C0287);
+  border: 3px solid var(--main-color, #FFFFFF);
 }
 
 .booking__label-button:focus {
-  outline: 3px solid #640AA3;
+  outline: 3px solid var(--background-button, #640AA3);
 }
 
 .booking {
-  background-color: #440F51;
+  background-color: var(--faq-item, #440F51);
 }
 
 .booking__title {
@@ -87,13 +87,13 @@
 
 .booking__label-button {
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: var(--main-color, #FFFFFF);
   border-radius: 8px;
   height: 55px;
   width: 250px;
   padding-top: 7px;
   text-align: center;
-  color: #000000;
+  color: var(--main-background, #1B1A1B);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color, outline;
@@ -143,8 +143,8 @@
 }
 
 .booking__button {
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background: var(--main-color, #FFFFFF);
+  border: 1px solid var(--main-color, #FFFFFF);
   border-radius: 10px;
   width: 300px;
   height: 60px;
@@ -152,7 +152,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--main-button, #6C0287);
   transition-duration: 0.3s;
   transition-property: background-color;
 }

@@ -1,6 +1,6 @@
 .services__item:hover {
   transform: scale(1.1);
-  box-shadow:0 0 10px #CD06FF;
+  box-shadow:0 0 10px var(--main-border);
 }
 
 .services__title {

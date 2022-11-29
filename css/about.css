@@ -44,7 +44,7 @@
   display: inline-block;
   vertical-align: top;
   content: open-quote;
-  color: #6C0287;
+  color: var(--main-button, #6C0287);
   font-size: 44px;
   font-weight: 900;
   margin-right: 9px;
@@ -52,7 +52,7 @@
 
 .quote__text:after {
   content: close-quote;
-  color: #6C0287;
+  color: var(--main-button, #6C0287);
   font-size: 44px;
   font-weight: 900;
 }

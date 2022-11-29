@@ -1,9 +1,9 @@
 .social__icon:hover > path {
-  fill: #EADEED;
+  fill: var(--hover-icon, #EADEED);
 }
 
 .social__icon:active > path {
-  fill: #CD06FF;
+  fill: var(--main-border, #CD06FF);
 }
 
 .social__icon > path {
@@ -12,7 +12,8 @@
 }
 
 .footer {
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: linear-gradient(180deg, var(--main-background, #1B1A1B) 0%,
+                                      var(--footer-gradient, #370A37) 100%);
 }
 
 .footer__title {
@@ -23,7 +24,7 @@
 }
 
 .contacts__list {
-  color: #ffffff;
+  color: var(--main-color, #ffffff);
   font-style: normal;
   line-height: 28px;
 }

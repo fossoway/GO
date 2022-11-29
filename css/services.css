@@ -15,7 +15,7 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px 20px;
 }
 
 .services__item {
@@ -27,6 +27,14 @@
   padding-bottom: 20px;
   align-items: flex-end;
   transition-duration: 1s;
+}
+
+.services__item:nth-child(2) {
+  margin-top: 60px;
+}
+
+.services__item:nth-child(2n+4) {
+  margin-top: -60px;
 }
 
 .services__item-vr {

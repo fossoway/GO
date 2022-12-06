@@ -59,6 +59,8 @@
   line-height: 50px;
   padding-left: 100px;
   margin-bottom: 30px;
+  width: 1px;
+  overflow: visible;
 }
 
 .promo__promotion {
@@ -68,11 +70,14 @@
   gap: 0 25px;
   align-items: center;
   margin-bottom: 150px;
+  width: 1px;
+  overflow: visible;
 }
 
 .promo__wrapper {
   align-self: end;
   flex-basis: 193px;
+  flex-shrink: 1;
 }
 
 .promo__numb {
@@ -193,8 +198,6 @@
   }
 
   .promo__subtitle {
-    width: 230px;
-    overflow: visible;
     padding-left: 70px;
     font-size: 18px;
     line-height: 24px;
@@ -262,7 +265,6 @@
     line-height: 14px;
     padding-left: 20px;
     padding-top: 6px;
-    width: 110px;
     margin-bottom: 10px;
   }
 

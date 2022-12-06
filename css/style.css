@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -38,7 +39,7 @@ a {
 }
 
 a:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-border, #CD06FF);
 }
 
 ul, ol {
@@ -49,7 +50,7 @@ ul, ol {
 
 .container {
   max-width: 1440px;
-  padding: 50px 130px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
@@ -94,3 +95,24 @@ iframe {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 865px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+}

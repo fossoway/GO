@@ -1,3 +1,7 @@
+.about {
+  padding-top: 100px;
+}
+
 .about__title {
   font-size: 40px;
   font-weight: 700;
@@ -5,22 +9,18 @@
   margin-bottom: 40px;
 }
 
-.about__subscription {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 500px;
+.about__wrapper {
+  display: flex;
+  gap: 0 80px;
 }
 
 .about__paragraph {
   line-height: 28px;
+  margin-bottom: 50px;
 }
 
-.about__paragraph:not(:last-child) {
+.about__paragraph:first-child {
   margin-bottom: 28px;
-}
-
-.about__image {
-  margin-right: 70px;
 }
 
 .quote {
@@ -73,4 +73,100 @@
 
 .quote__image {
   display: inline-block;
+}
+
+@media (max-width: 1260px) {
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .about__wrapper {
+    gap: 0 40px;
+  }
+
+  .about__image {
+    height: 421px;
+    width: auto;
+  }
+
+  .about__paragraph {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 37px;
+  }
+
+  .about__paragraph:first-child {
+    margin-bottom: 24px;
+  }
+
+  .quote__text {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 13px;
+  }
+
+  .quote:before {
+    font-size: 30px;
+  }
+
+  .quote__text:after {
+    font-size: 30px;
+  }
+
+  .quote__image {
+    width: 70px;
+    height: auto;
+  }
+
+  .quote__name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 865px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__wrapper {
+    display: inline-block;
+  }
+
+  .about__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 26px;
+  }
+
+  .about__image {
+    width: 382px;
+    height: auto;
+    float: right;
+  }
+
+  .about__subscription {
+    width: 278px;
+  }
+
+  .about__paragraph {
+    width: 278px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 170px;
+  }
+
+  .about__paragraph:first-child {
+    margin-bottom: 22px;
+  }
+
+  .quote {
+    float: left;
+  }
 }

@@ -141,16 +141,16 @@
 
 .booking__choice-input {
   height: 52px;
-  max-width: 310px;
+  width: 280px;
 }
 
 .booking__choice-shrink {
-  max-width: 156px;
+  width: 140px;
   height: 52px;
 }
 
 .booking__choice-warp {
-  max-width: 360px;
+  width: 330px;
   height: 52px;
 }
 

@@ -17,7 +17,6 @@
 
 .promo__button:hover {
   background-color: var(--hover-button, #840AA3);
-  border: var(--hover-button, #840AA3);
 }
 
 .promo__button:active {
@@ -26,7 +25,6 @@
 
 .promo__button:focus {
   background-color: var(--hover-button, #840AA3);
-  border: var(--hover-button, #840AA3);
 }
 
 .promo {
@@ -107,8 +105,8 @@
   text-align: center;
   width: 374px;
   height: 80px;
+  overflow: visible;
   background-color: var(--main-button, #6C0287);
-  border: 2px solid var(--main-button, #6C0287);
   border-radius: 10px;
   color: var(--main-color, #FFFFFF);
   font-weight: 700;
@@ -117,7 +115,7 @@
   text-transform: uppercase;
   box-shadow: 0 0 15px var(--main-button);
   transition-duration: 0.5s;
-  transition-property: background-color, border;
+  transition-property: background-color;
 }
 
 .promo__link {
@@ -132,7 +130,7 @@
   transition-property: fill, stroke;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .promo {
     padding-top: 30px;
   }
@@ -191,7 +189,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .promo__title {
     font-size: 86px;
     line-height: 86px;
@@ -244,7 +242,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 640px) {
   .promo {
     padding-top: 20px;
   }

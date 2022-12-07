@@ -68,7 +68,7 @@
   line-height: 28px;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .reviews {
     padding-top: 70px;
   }
@@ -102,7 +102,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .reviews {
     padding-top: 60px;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 640px) {
   .reviews {
     padding-top: 30px;
   }

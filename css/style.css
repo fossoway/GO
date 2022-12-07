@@ -13,13 +13,14 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
+  margin: 0;
+  overflow: visible;
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--main-color, #ffffff);
   background-color: var(--main-background, #1B1A1B);
 }
-
 
 img, svg {
   max-width: 100%;
@@ -97,21 +98,28 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .container {
     max-width: 1024px;
     padding: 0 60px;
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .container {
     max-width: 768px;
     padding: 0 40px;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 720px) {
+  .container-720 {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
   .container {
     max-width: 320px;
     padding: 0 20px;

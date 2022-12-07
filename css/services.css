@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .services {
     padding-top: 150px;
   }
@@ -124,7 +124,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .services {
     padding-top: 184px;
   }
@@ -155,7 +155,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 640px) {
   .services {
     padding-top: 69px;
   }

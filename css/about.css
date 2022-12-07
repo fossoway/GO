@@ -12,7 +12,7 @@
 .about__wrapper {
   display: grid;
   gap: 40px 80px;
-  grid-template-columns: 600px 500px;
+  grid-template-columns: 48% 45%;
   grid-template-rows: 222px 191px 84px;
   grid-template-areas:
   "image text"
@@ -44,9 +44,8 @@
 .about__text {
   padding-left: 15px;
   display: inline-block;
-  width: 469px;
-  overflow: visible;
   font-size: 44px;
+  width: 80%;
   font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
@@ -81,7 +80,7 @@
   line-height: 28px;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .about {
     padding-top: 70px;
   }
@@ -94,7 +93,6 @@
 
   .about__wrapper {
     gap: 15px 40px;
-    grid-template-columns: 421px 444px;
     grid-template-rows: 195px 115px 78px;
   }
 
@@ -115,7 +113,6 @@
   .about__text {
     font-size: 30px;
     line-height: 36px;
-    width: 414px;
     padding-left: 0;
   }
 
@@ -138,14 +135,13 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .about {
     padding-top: 60px;
   }
 
   .about__wrapper {
     gap: 28px 28px;
-    grid-template-columns: 382px 278px;
     grid-template-rows: 381px repeat(2, 79px);
     grid-template-areas:
   "image text"
@@ -165,7 +161,6 @@
   }
 
   .about__subscription {
-    width: 278px;
     align-self: center;
   }
 
@@ -181,8 +176,6 @@
   .about__text {
     font-size: 32px;
     line-height: 36px;
-    width: 630px;
-
   }
 
   .about__quote:before {
@@ -198,14 +191,14 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 640px) {
   .about {
     padding-top: 30px;
   }
 
   .about__wrapper {
     gap: 15px 0;
-    grid-template-columns: 280px;
+    grid-template-columns: 100%;
     grid-template-rows: 127px 281px 79px 50px;
     grid-template-areas:
   "text"
@@ -221,7 +214,6 @@
   }
 
   .about__image {
-    width: 280px;
     height: auto;
   }
 
@@ -242,7 +234,6 @@
   .about__text {
     font-size: 18px;
     line-height: 26px;
-    width: 250px;
   }
 
   .about__quote:before {

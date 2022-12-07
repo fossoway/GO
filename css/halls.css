@@ -12,14 +12,15 @@
 
 .halls__list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .halls__item {
   display: block;
-  flex-basis: 580px;
-  height: 349px;
+  flex-basis: 48%;
+  max-width: 580px;
 }
 
 .halls__link {
@@ -57,7 +58,7 @@
   background-size: cover;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .halls {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -70,7 +71,6 @@
   }
 
   .halls__item {
-    flex-basis: 441px;
     height: 267px;
   }
 
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .halls {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -96,7 +96,6 @@
   }
 
   .halls__item {
-    flex-basis: 334px;
     height: 200px;
   }
 
@@ -110,7 +109,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 640px) {
   .halls {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -123,8 +122,8 @@
   }
 
   .halls__item {
-    flex-basis: 280px;
     height: 168px;
+    flex-basis: 280px;
   }
 
   .halls__link {

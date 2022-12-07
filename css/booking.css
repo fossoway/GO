@@ -83,8 +83,9 @@
   cursor: pointer;
   background-color: var(--main-color, #FFFFFF);
   border-radius: 8px;
+  border: 3px solid var(--main-color, #FFFFFF);
   height: 55px;
-  width: 250px;
+  width: 25%;
   text-align: center;
   color: var(--main-background, #1B1A1B);
   transition-duration: 0.5s;
@@ -95,7 +96,7 @@
 .booking__sub-halls {
   font-weight: 700;
   font-size: 30px;
-  line-height: 55px;
+  line-height: 49px;
   text-transform: uppercase;
 }
 
@@ -124,7 +125,7 @@
 .booking__option-wrapper {
   display: grid;
   grid-template-rows: repeat(2, 74px);
-  grid-template-columns: repeat(2, 130px) repeat(2, 300px);
+  grid-template-columns: repeat(2, 16%) repeat(2, minmax(auto, 32%));
   align-items: end;
   gap: 10px 40px;
   padding: 0 100px;
@@ -140,27 +141,28 @@
 
 .booking__choice-input {
   height: 52px;
-  width: 300px;
+  max-width: 310px;
 }
 
 .booking__choice-shrink {
-  width: 130px;
+  max-width: 156px;
   height: 52px;
 }
 
 .booking__choice-warp {
-  width: 300px;
+  max-width: 360px;
   height: 52px;
 }
 
 .booking__label-time {
   grid-area: time;
-  justify-self: start
+  justify-self: start;
+  max-width: 310px;
 }
 
 .booking__label-count {
   grid-area: count;
-  justify-self: start
+  justify-self: start;
 }
 
 .booking__label-firstname {
@@ -185,7 +187,7 @@
   line-height: 16px;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1365px) {
   .booking {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -202,7 +204,6 @@
   }
 
   .booking__label-button {
-    width: 180px;
     height: 44px;
   }
 
@@ -237,7 +238,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 970px) {
   .booking {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -256,7 +257,6 @@
   }
 
   .booking__label-button {
-    width: 150px;
     height: 38px;
   }
 
@@ -311,7 +311,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 720px) {
   .booking {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -354,6 +354,7 @@
     grid-template-columns: repeat(2, 134px);
     gap: 10px 12px;
     padding-left: 0;
+    margin: 0 auto;
     grid-template-areas:
   "date time"
   "count count"

@@ -14,6 +14,18 @@
   border: 3px solid var(--main-button, #6C0287);
 }
 
+.header__link:hover > svg > rect {
+  fill: var(--main-border, #CD06FF);
+}
+
+.header__link:active > svg > rect {
+  fill: var(--hover-button, #840AA3);
+}
+
+.header__link:focus > svg > rect {
+  fill: var(--hover-button, #840AA3);
+}
+
 .header {
   display: flex;
   justify-content: space-between;

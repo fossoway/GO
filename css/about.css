@@ -10,69 +10,75 @@
 }
 
 .about__wrapper {
-  display: flex;
-  gap: 0 80px;
+  display: grid;
+  gap: 40px 80px;
+  grid-template-columns: 600px 500px;
+  grid-template-rows: 222px 191px 84px;
+  grid-template-areas:
+  "image text"
+  "image quote"
+  "image cite";
+}
+
+.about__image {
+  grid-area: image;
+}
+
+.about__subscription {
+  grid-area: text;
 }
 
 .about__paragraph {
   line-height: 28px;
-  margin-bottom: 50px;
 }
 
 .about__paragraph:first-child {
   margin-bottom: 28px;
 }
 
-.quote {
-  display: inline-block;
-  vertical-align: top;
-  width: 500px;
+.about__quote {
+  grid-area: quote;
   quotes: "\201C" "\201D";
 }
 
-.quote__text {
+.about__text {
+  padding-left: 15px;
   display: inline-block;
+  width: 469px;
+  overflow: visible;
   font-size: 44px;
   font-weight: 400;
   line-height: 50px;
-  width: 400px;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
-.quote:before {
-  display: inline-block;
+.about__quote:before {
   vertical-align: top;
   content: open-quote;
   color: var(--main-button, #6C0287);
   font-size: 44px;
   font-weight: 900;
-  margin-right: 9px;
 }
 
-.quote__text:after {
-  content: close-quote;
+.close {
   color: var(--main-button, #6C0287);
   font-size: 44px;
   font-weight: 900;
 }
 
-.quote__cite {
-  display: inline-block;
-  width: 380px;
-  vertical-align: top;
-  float: right;
+.cite {
+  grid-area: cite;
+  justify-self: end
 }
 
-.quote__name {
+.cite__image {
+  margin-right: 30px;
+}
+
+.cite__name {
   display: inline-block;
   width: 279px;
-  float: right;
   line-height: 28px;
-}
-
-.quote__image {
-  display: inline-block;
 }
 
 @media (max-width: 1260px) {
@@ -87,44 +93,46 @@
   }
 
   .about__wrapper {
-    gap: 0 40px;
+    gap: 15px 40px;
+    grid-template-columns: 421px 444px;
+    grid-template-rows: 195px 115px 78px;
   }
 
   .about__image {
-    height: 421px;
-    width: auto;
+    width: 421px;
+    height: auto;
   }
 
   .about__paragraph {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 37px;
   }
 
   .about__paragraph:first-child {
     margin-bottom: 24px;
   }
 
-  .quote__text {
+  .about__text {
     font-size: 30px;
     line-height: 36px;
-    margin-bottom: 13px;
+    width: 414px;
+    padding-left: 0;
   }
 
-  .quote:before {
+  .about__quote:before {
     font-size: 30px;
   }
 
-  .quote__text:after {
+  .close {
     font-size: 30px;
   }
 
-  .quote__image {
+  .cite__image {
     width: 70px;
     height: auto;
   }
 
-  .quote__name {
+  .cite__name {
     font-size: 18px;
     line-height: 26px;
   }
@@ -136,7 +144,13 @@
   }
 
   .about__wrapper {
-    display: inline-block;
+    gap: 28px 28px;
+    grid-template-columns: 382px 278px;
+    grid-template-rows: 381px repeat(2, 79px);
+    grid-template-areas:
+  "image text"
+  "quote quote"
+  "cite cite";
   }
 
   .about__title {
@@ -148,25 +162,110 @@
   .about__image {
     width: 382px;
     height: auto;
-    float: right;
   }
 
   .about__subscription {
     width: 278px;
+    align-self: center;
   }
 
   .about__paragraph {
-    width: 278px;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 170px;
   }
 
   .about__paragraph:first-child {
     margin-bottom: 22px;
   }
 
-  .quote {
-    float: left;
+  .about__text {
+    font-size: 32px;
+    line-height: 36px;
+    width: 630px;
+
+  }
+
+  .about__quote:before {
+    font-size: 32px;
+  }
+
+  .close {
+    font-size: 32px;
+  }
+
+  .cite__name {
+    width: 225px;
+  }
+}
+
+@media (max-width: 440px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about__wrapper {
+    gap: 15px 0;
+    grid-template-columns: 280px;
+    grid-template-rows: 127px 281px 79px 50px;
+    grid-template-areas:
+  "text"
+  "image"
+  "quote"
+  "cite";
+  }
+
+  .about__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .about__image {
+    width: 280px;
+    height: auto;
+  }
+
+  .about__subscription {
+    width: 280px;
+    align-self: center;
+  }
+
+  .about__paragraph {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__paragraph:first-child {
+    margin-bottom: 16px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 26px;
+    width: 250px;
+  }
+
+  .about__quote:before {
+    font-size: 22px;
+  }
+
+  .close {
+    font-size: 22px;
+  }
+
+  .cite {
+    align-self: start;
+  }
+
+  .cite__name {
+    width: 160px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .cite__image {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
   }
 }

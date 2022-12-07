@@ -35,12 +35,15 @@
       </div>
     </a>
 
+
     <div class="header__menu header__menu-mobile">
-      <svg width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="54" height="5" rx="2" fill="#6C0287"/>
-        <rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
-        <rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
-      </svg>
+      <a class="header__link" href="#">
+        <svg width="54" height="29" viewBox="0 0 54 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="54" height="5" rx="2" fill="#6C0287"/>
+          <rect y="12" width="54" height="5" rx="2" fill="#6C0287"/>
+          <rect y="24" width="31" height="5" rx="2" fill="#6C0287"/>
+        </svg>
+      </a>
     </div>
 
     <nav class="header__menu header__menu-full">
@@ -261,46 +264,46 @@
           <legend class="booking__option">Выбери дату и время</legend>
 
           <div class="booking__option booking__option-wrapper">
-              <label class="booking__label booking__label-date">
-                <input class="booking__choice booking__choice-shrink" placeholder="Дата"
-                       type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-              </label>
+            <label class="booking__label booking__label-date">
+              <input class="booking__choice booking__choice-shrink" placeholder="Дата"
+                     type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            </label>
 
-              <label class="booking__label booking__label-time">
-                <input class="booking__choice booking__choice-shrink" placeholder="Время"
-                       type="text" onfocus="(this.type='time')" onblur="(this.type='text')" required>
-              </label>
+            <label class="booking__label booking__label-time">
+              <input class="booking__choice booking__choice-shrink" placeholder="Время"
+                     type="text" onfocus="(this.type='time')" onblur="(this.type='text')" required>
+            </label>
 
-              <label class="booking__label booking__label-count">
-                <input class="booking__choice booking__choice-warp" placeholder="Сколько человек"
-                       type="text" onfocus="(this.type='number')" onblur="(this.type='text')" required>
-              </label>
+            <label class="booking__label booking__label-count">
+              <input class="booking__choice booking__choice-warp" placeholder="Сколько человек"
+                     type="text" onfocus="(this.type='number')" onblur="(this.type='text')" required>
+            </label>
 
-              <label class="booking__label booking__label-firstname">
-                <span class="booking__field">Имя</span>
-                <input class="booking__choice booking__choice-input" name="firstname" type="text" required>
-              </label>
+            <label class="booking__label booking__label-firstname">
+              <span class="booking__field">Имя</span>
+              <input class="booking__choice booking__choice-input" name="firstname" type="text" required>
+            </label>
 
-              <label class="booking__label booking__label-lastname">
-                <span class="booking__field">Фамилия</span>
-                <input class="booking__choice booking__choice-input" name="lastname" type="text" required>
-              </label>
+            <label class="booking__label booking__label-lastname">
+              <span class="booking__field">Фамилия</span>
+              <input class="booking__choice booking__choice-input" name="lastname" type="text" required>
+            </label>
 
 
-              <label class="booking__label booking__label-phone">
-                <span class="booking__field">Номер телефона</span>
-                <input class="booking__choice booking__choice-input" name="phone"
-                       type="tel"
-                       pattern="^((\+7|7|8)+([0-9]){10})$"
-                       required>
-              </label>
+            <label class="booking__label booking__label-phone">
+              <span class="booking__field">Номер телефона</span>
+              <input class="booking__choice booking__choice-input" name="phone"
+                     type="tel"
+                     pattern="^((\+7|7|8)+([0-9]){10})$"
+                     required>
+            </label>
 
-              <label class="booking__label booking__label-email">
-                <span class="booking__field">E-mail</span>
-                <input class="booking__choice booking__choice-input" name="email"
-                       type="email"
-                       required>
-              </label>
+            <label class="booking__label booking__label-email">
+              <span class="booking__field">E-mail</span>
+              <input class="booking__choice booking__choice-input" name="email"
+                     type="email"
+                     required>
+            </label>
 
           </div>
 
@@ -327,23 +330,28 @@
             реальности в центрально части города.
           </p>
 
-          <p class="about__paragraph">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
+          <p class="about__paragraph">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и
+            радовать
             Вас топовыми игровыми разработками со всего мира.
           </p>
+        </div>
 
-          <blockquote class="quote">
-            <p class="quote__text"><b lang="en">GAME OVER</b> — это место незабываемых впечатлений
-            </p>
-            <div class="quote__cite">
-              <img class="quote__image" src="img/Abakshin.png" alt="фотография Аркадия Абакшина" height="80" width="80">
-              <cite class="quote__name">Аркадий Абакшин, создатель игровой территории <span lang="en">GAME OVER</span>
-              </cite>
-            </div>
-          </blockquote>
+
+        <blockquote class="about__quote">
+          <p class="about__text"><span lang="en">GAME OVER</span> — это место незабываемых впечатлений
+            <span class="close">&#8221;</span>
+          </p>
+        </blockquote>
+        <div class="cite">
+          <img class="cite__image" src="img/Abakshin.png" alt="фотография Аркадия Абакшина" height="80" width="80">
+          <cite class="cite__name">Аркадий Абакшин, создатель игровой территории <span lang="en">GAME OVER</span>
+          </cite>
         </div>
       </div>
     </div>
   </section>
+
+
 
 </main>
 

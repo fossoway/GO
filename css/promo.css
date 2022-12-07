@@ -120,7 +120,7 @@
 
 .promo__link {
   position: absolute;
-  left: 900px;
+  left: 48%;
   top: 780px;
 }
 
@@ -184,7 +184,6 @@
 
   .promo__link {
     width: 67px;
-    left: 478px;
     top: 585px;
   }
 }

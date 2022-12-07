@@ -111,7 +111,7 @@
   }
 
   .about__text {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
     padding-left: 0;
   }
@@ -174,16 +174,17 @@
   }
 
   .about__text {
-    font-size: 32px;
+    width: 94%;
+    font-size: 30px;
     line-height: 36px;
   }
 
   .about__quote:before {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .close {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .cite__name {

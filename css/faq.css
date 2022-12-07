@@ -73,6 +73,10 @@
     padding-top: 70px;
   }
 
+  .faq__item-hidden {
+    display: none;
+  }
+
   .faq__title {
     font-size: 30px;
     margin-bottom: 26px;

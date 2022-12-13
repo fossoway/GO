@@ -27,10 +27,6 @@
   background-color: var(--hover-button, #840AA3);
 }
 
-.promo {
-  padding-top: 45px;
-}
-
 .promo__title {
   font-weight: 900;
   font-size: 150px;
@@ -116,6 +112,7 @@
   box-shadow: 0 0 15px var(--main-button);
   transition-duration: 0.5s;
   transition-property: background-color;
+  margin-bottom: 150px;
 }
 
 .promo__link {
@@ -131,10 +128,6 @@
 }
 
 @media (max-width: 1365px) {
-  .promo {
-    padding-top: 30px;
-  }
-
   .promo__title {
     font-size: 120px;
     line-height: 120px;
@@ -180,6 +173,7 @@
     height: 64px;
     font-size: 22px;
     line-height: 64px;
+    margin-bottom: 70px;
   }
 
   .promo__link {
@@ -234,6 +228,7 @@
     height: 46px;
     font-size: 16px;
     line-height: 46px;
+    margin-bottom: 120px;
   }
 
   .promo__link {
@@ -242,10 +237,6 @@
 }
 
 @media (max-width: 640px) {
-  .promo {
-    padding-top: 20px;
-  }
-
   .promo__title {
     font-size: 35px;
     line-height: 35px;
@@ -297,5 +288,6 @@
     height: 27px;
     font-size: 10px;
     line-height: 27px;
+    margin-bottom: 30px;
   }
 }

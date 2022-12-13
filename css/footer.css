@@ -11,9 +11,12 @@
   transition-property: fill;
 }
 
+.link:hover,
+.footer__link:hover {
+  text-shadow: 0 0 15px var(--main-color);
+}
+
 .footer {
-  padding-top: 100px;
-  padding-bottom: 30px;
   background: linear-gradient(180deg, var(--main-background, #1B1A1B) 0%,
                                       var(--footer-gradient, #370A37) 100%);
 }
@@ -73,10 +76,6 @@
 }
 
 @media (max-width: 1365px) {
-  .footer {
-    padding-top: 70px;
-  }
-
   .footer__title {
     font-size: 30px;
     line-height: 40px;
@@ -124,10 +123,6 @@
 }
 
 @media (max-width: 640px) {
-  .footer {
-    padding-top: 30px;
-  }
-
   .footer__title {
     font-size: 14px;
     line-height: 18px;

@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="page">
-<div class="container">
-  <header class="header">
+<header class="header">
+  <div class="container container-flex">
     <a class="header__link" href="index.html">
       <div class="header__logo">
         <svg width="120" height="66" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,9 +67,9 @@
     </nav>
 
     <button class="header__button">Заказать звонок</button>
+  </div>
+</header>
 
-  </header>
-</div>
 
 <main class="main">
 
@@ -111,26 +111,26 @@
     <div class="container">
       <h2 class="services__title" id="services">У нас есть всё для классного отдыха с друзьями!</h2>
 
-      <div class="services__list">
-        <div class="services__item services__item-vr">
+      <ul class="services__list">
+        <li class="services__item services__item-vr">
           VR очки
-        </div>
-        <div class="services__item services__item-audio">
+        </li>
+        <li class="services__item services__item-audio">
           Аудио-система 5.1 с отличным звуком
-        </div>
-        <div class="services__item services__item-karaoke">
+        </li>
+        <li class="services__item services__item-karaoke">
           Караоке (4 микрофона)
-        </div>
-        <div class="services__item services__item-game">
+        </li>
+        <li class="services__item services__item-game">
           Настольные игры
-        </div>
-        <div class="services__item services__item-cinema">
+        </li>
+        <li class="services__item services__item-cinema">
           Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
-        </div>
-        <div class="services__item services__item-playstation">
-          <span lang="en">PlayStation 5</span>
-        </div>
-      </div>
+        </li>
+        <li class="services__item services__item-playstation" lang="en">
+          PlayStation 5
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -141,22 +141,22 @@
       <ol class="halls__list">
         <li class="halls__item">
           <a class="halls__link halls__link-vibes" href="vibes.html">
-            <span class="halls__name" lang="en">80`s vibes</span>
+            <p class="halls__name" lang="en">80`s vibes</p>
           </a>
         </li>
         <li class="halls__item">
           <a class="halls__link halls__link-starwars" href="starwars.html">
-            <span class="halls__name" lang="en">Star wars</span>
+            <p class="halls__name" lang="en">Star wars</p>
           </a>
         </li>
         <li class="halls__item">
           <a class="halls__link halls__link-wildwest" href="wildwest.html">
-            <span class="halls__name" lang="en">Wild west</span>
+            <p class="halls__name" lang="en">Wild west</p>
           </a>
         </li>
         <li class="halls__item">
           <a class="halls__link halls__link-neon" href="neon.html">
-            <span class="halls__name" lang="en">Neon style</span>
+            <p class="halls__name" lang="en">Neon style</p>
           </a>
         </li>
       </ol>
@@ -172,25 +172,25 @@
           <legend class="booking__option">Выбери зал</legend>
 
           <input id="vibes" class="booking__choice booking__choice-no-radio" type="radio" name="halls" value="vibes">
-          <label for="vibes" class="booking__label booking__label-button">
-            <span class="booking__sub booking__sub-halls" lang="en">80's vibes</span>
+          <label for="vibes" class="booking__label booking__label-button" lang="en">
+            80's vibes
           </label>
 
           <input id="starwars" class="booking__choice booking__choice-no-radio" type="radio" name="halls"
                  value="starwars">
-          <label for="starwars" class="booking__label booking__label-button">
-            <span class="booking__sub booking__sub-halls" lang="en">star wars</span>
+          <label for="starwars" class="booking__label booking__label-button" lang="en">
+            star wars
           </label>
 
           <input id="wildwest" class="booking__choice booking__choice-no-radio" type="radio" name="halls"
                  value="wildwest">
-          <label for="wildwest" class="booking__label booking__label-button">
-            <span class="booking__sub booking__sub-halls" lang="en">wild west</span>
+          <label for="wildwest" class="booking__label booking__label-button" lang="en">
+            wild west
           </label>
 
           <input id="neon" class="booking__choice booking__choice-no-radio" type="radio" name="halls" value="neon">
-          <label for="neon" class="booking__label booking__label-button">
-            <span class="booking__sub booking__sub-halls" lang="en">neon style</span>
+          <label for="neon" class="booking__label booking__label-button" lang="en">
+            neon style
           </label>
         </fieldset>
 
@@ -200,48 +200,48 @@
           <fieldset class="booking__fieldset booking__fieldset-column">
             <legend class="booking__option">Приставка:</legend>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="radio" name="console" value="sony">
-              <span class="booking__sub" lang="en">PlayStation</span>
+              PlayStation
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="radio" name="console" value="sega">
-              <span class="booking__sub" lang="en">Sega Mega Drive</span>
+              Sega Mega Drive
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="radio" name="console" value="xbox">
-              <span class="booking__sub" lang="en">X-box One S</span>
+              X-box One S
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="radio" name="console" value="dendy">
-              <span class="booking__sub" lang="en">Dendy</span>
+              Dendy
             </label>
           </fieldset>
 
           <fieldset class="booking__fieldset booking__fieldset-column">
             <legend class="booking__option">Настольные игры:</legend>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="checkbox" name="game" value="jenga">
-              <span class="booking__sub" lang="en">Jenga</span>
+              Jenga
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="checkbox" name="game" value="monopoly">
-              <span class="booking__sub" lang="en">Monopoly</span>
+              Monopoly
             </label>
 
             <label class="booking__label">
               <input class="booking__choice" type="checkbox" name="game" value="manchkin">
-              <span class="booking__sub">Манчкин</span>
+              Манчкин
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="checkbox" name="game" value="alias">
-              <span class="booking__sub" lang="en">Alias</span>
+              Alias
             </label>
           </fieldset>
 
@@ -250,12 +250,12 @@
 
             <label class="booking__label">
               <input class="booking__choice" type="checkbox" name="add" value="karaoke">
-              <span class="booking__sub">Караоке</span>
+              Караоке
             </label>
 
-            <label class="booking__label">
+            <label class="booking__label" lang="en">
               <input class="booking__choice" type="checkbox" name="add" value="vr">
-              <span class="booking__sub" lang="en">VR</span>
+              VR
             </label>
           </fieldset>
         </fieldset>
@@ -355,8 +355,8 @@
     <div class="container">
       <h2 class="reviews__title" id="reviews">Отзывы посетителей</h2>
 
-      <div class="reviews__wrapper">
-        <div class="reviews__item">
+      <ul class="reviews__wrapper">
+        <li class="reviews__item">
           <figure class="reviews__figure">
             <div class="reviews__image reviews__image-samoylov"></div>
             <figcaption class="reviews__figcaption">Макс Самойлов</figcaption>
@@ -365,9 +365,9 @@
             lang="en">VR</span> очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
             высоте!
           </div>
-        </div>
+        </li>
 
-        <div class="reviews__item">
+        <li class="reviews__item">
           <figure class="reviews__figure">
             <div class="reviews__image reviews__image-grigorieva"></div>
             <figcaption class="reviews__figcaption">Оксана Григорьева</figcaption>
@@ -376,9 +376,9 @@
             корпоратив!
             У нас в городе больше нет подобных заведений
           </div>
-        </div>
+        </li>
 
-        <div class="reviews__item">
+        <li class="reviews__item">
           <figure class="reviews__figure">
             <div class="reviews__image reviews__image-yashenko"></div>
             <figcaption class="reviews__figcaption">Никита Ященко</figcaption>
@@ -386,8 +386,8 @@
           <div class="reviews__text">Немного подвисала игра в <span lang="en">VR</span> очках, а так все норм. Крутое
             оформление комнаты в стиле звездных войн, попал в атмосферу космоса
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -425,9 +425,9 @@
                   d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z"
                   fill="#CD06FF"/>
               </svg>
-              <span class="contacts__text">
+              <p class="contacts__text">
               г. Москва ул.&nbsp;Аквамарина,&nbsp;16
-              </span>
+              </p>
             </li>
             <li class="contacts__item contacts__item-phone">
               <svg class="contacts__icon" width="27" height="24" viewBox="0 0 27 24" fill="none"
@@ -437,9 +437,9 @@
                   fill="#CD06FF"/>
               </svg>
               <a class="link" href="tel:+79509302893">
-                <span class="contacts__text">
+                <p class="contacts__text">
                 8(950)930-28-93
-                </span>
+                </p>
               </a>
             </li>
             <li class="contacts__item contacts__item-email">
@@ -448,9 +448,9 @@
                 <path d="M31.6133 3.96279C31.377 3.85279 31.099 3.89116 30.9024 4.05916C26.0319 8.18804 19.8158 13.4804 17.86 15.2427C16.7623 16.2336 15.2389 16.2336 14.1386 15.2414C12.054 13.3632 5.0735 7.42891 1.09763 4.0591C0.899688 3.8911 0.621063 3.85404 0.386687 3.96273C0.151062 4.07216 0 4.30785 0 4.5676V21.3332C0 22.804 1.19594 23.9999 2.66669 23.9999H29.3334C30.8041 23.9999 32 22.804 32 21.3332V4.5676C32 4.30785 31.8489 4.07154 31.6133 3.96279Z" fill="#CD06FF"/>
               </svg>
               <a class="link" href="mailto:gameover@gmail.com">
-                <span class="contacts__text">
+                <p class="contacts__text">
                 GameOver@gmail.com
-                </span>
+                </p>
               </a>
             </li>
           </ul>
@@ -508,7 +508,7 @@
 
     <div class="footer__copyright">
       <p class="footer__text">© Game Over, 2022</p>
-      <p class="footer__text">Design by Anastasia&nbsp;Ilina ilina9825@gmail.com</p>
+      <p class="footer__text">Design by Anastasia&nbsp;Ilina <a class="footer__link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
     </div>
   </div>
 

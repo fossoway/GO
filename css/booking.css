@@ -32,8 +32,6 @@
 
 .booking {
   background-color: var(--faq-item, #440F51);
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .booking__fieldset-halls {
@@ -91,9 +89,6 @@
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color, outline;
-}
-
-.booking__sub-halls {
   font-weight: 700;
   font-size: 30px;
   line-height: 49px;
@@ -188,11 +183,6 @@
 }
 
 @media (max-width: 1365px) {
-  .booking {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   .booking__fieldset-add {
     justify-content: space-between;
   }
@@ -205,9 +195,6 @@
 
   .booking__label-button {
     height: 44px;
-  }
-
-  .booking__sub-halls {
     font-size: 20px;
     line-height: 44px;
   }
@@ -239,11 +226,6 @@
 }
 
 @media (max-width: 970px) {
-  .booking {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
   .booking__title {
     font-size: 24px;
     line-height: 36px;
@@ -256,16 +238,13 @@
     gap: 30px 50px;
   }
 
-  .booking__label-button {
-    height: 38px;
-  }
-
-  .booking__sub {
+  .booking__label {
     font-size: 22px;
     line-height: 25px;
   }
 
-  .booking__sub-halls {
+  .booking__label-button {
+    height: 38px;
     font-size: 16px;
     line-height: 38px;
   }
@@ -312,11 +291,6 @@
 }
 
 @media (max-width: 720px) {
-  .booking {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .booking__title {
     font-size: 14px;
     line-height: 20px;
@@ -328,17 +302,14 @@
     line-height: 18px;
   }
 
-  .booking__label-button {
-    width: 130px;
-    height: 30px;
-  }
-
-  .booking__sub {
+  .booking__label {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .booking__sub-halls {
+  .booking__label-button {
+    width: 130px;
+    height: 30px;
     font-size: 14px;
     line-height: 30px;
   }

@@ -14,6 +14,10 @@
   border: 3px solid var(--main-button, #6C0287);
 }
 
+.header__link:hover {
+  text-shadow: 0 0 10px var(--main-color);
+}
+
 .header__link:hover > svg > rect {
   fill: var(--main-border, #CD06FF);
 }
@@ -24,13 +28,6 @@
 
 .header__link:focus > svg > rect {
   fill: var(--hover-button, #840AA3);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-  align-items: center;
 }
 
 .header__menu-mobile {
@@ -105,10 +102,6 @@
 }
 
 @media (max-width: 640px) {
-  .header {
-    padding-top: 20px;
-  }
-
   .header__logo {
     width: 66px;
     height: 42px;

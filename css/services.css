@@ -3,10 +3,6 @@
   box-shadow:0 0 10px var(--main-border);
 }
 
-.services {
-  padding-top: 254px;
-}
-
 .services__title {
   max-width: 700px;
   font-size: 40px;
@@ -84,10 +80,6 @@
 }
 
 @media (max-width: 1365px) {
-  .services {
-    padding-top: 150px;
-  }
-
   .services__title {
     padding: 0 50px;
     font-size: 30px;
@@ -125,10 +117,6 @@
 }
 
 @media (max-width: 970px) {
-  .services {
-    padding-top: 184px;
-  }
-
   .services__item:nth-child(2) {
     margin-top: 0;
   }
@@ -156,10 +144,6 @@
 }
 
 @media (max-width: 640px) {
-  .services {
-    padding-top: 69px;
-  }
-
   .services__title {
     padding: 0;
     font-size: 14px;

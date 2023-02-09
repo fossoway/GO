@@ -30,6 +30,10 @@
   fill: var(--hover-button, #840AA3);
 }
 
+.header__popap {
+  display: none;
+}
+
 .header__menu-mobile {
   display: none;
 }

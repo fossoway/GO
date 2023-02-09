@@ -1,6 +1,6 @@
 const formOverlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
-const buttonRequest = document.querySelector('.header__button');
+const buttonRequest = document.querySelectorAll('.header__button');
 const form = document.querySelector('.modal__form');
 
 
@@ -12,7 +12,9 @@ const closeModal = () => {
   formOverlay.classList.remove('is-visible');
 };
 
-buttonRequest.addEventListener('click', openModal)
+buttonRequest.forEach(btn => {
+  btn.addEventListener('click', openModal)
+})
 
 formOverlay.addEventListener('click', e => {
   if (e.target === formOverlay) {

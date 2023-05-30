@@ -33,4 +33,30 @@ form.addEventListener('submit', e => {
   const formData = new FormData(e.target);
 
   closeModal();
-})
+});
+
+const inputTel = document.querySelector('#modalPhone');
+const telMask = new Inputmask('+7 (999) 999-99-99');
+
+telMask.mask(inputTel);
+
+const validation = new JustValidate('.modal__form');
+
+validation
+  .addField('#modalName', [
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Не менее 2 символов',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Введите имя',
+    },
+  ])
+  .addField('#modalPhone', [
+    {
+      rule: 'required',
+      errorMessage: 'Введите телефон',
+    }
+  ])

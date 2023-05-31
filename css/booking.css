@@ -42,9 +42,10 @@
 
 .booking__fieldset-add {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 0 100px;
   margin-bottom: 60px;
+  padding: 0 100px;
 }
 
 .booking__fieldset-column {

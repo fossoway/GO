@@ -1,3 +1,8 @@
+.reviews-button-prev:hover > svg > path,
+.reviews-button-next:hover > svg > path {
+  fill: var(--main-border, #CD06FF);
+}
+
 .reviews__title {
   font-weight: 700;
   font-size: 40px;
@@ -15,7 +20,7 @@
 
 .reviews__item {
   display: flex;
-  padding: 100px;
+  padding: 25px 100px;
   width: 980px;
   gap: 0 20px;
 }
@@ -61,6 +66,24 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+.reviews-button-prev,
+.reviews-button-next {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 46px;
+  height: 46px;
+  top: calc(50% - 23px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-button-next{
+  right: 0;
 }
 
 @media (max-width: 1365px) {

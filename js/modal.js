@@ -40,7 +40,9 @@ const telMask = new Inputmask('+7 (999) 999-99-99');
 
 telMask.mask(inputTel);
 
-const validation = new JustValidate('.modal__form');
+const validation = new JustValidate('.modal__form', {
+  validateBeforeSubmitting: true,
+});
 
 validation
   .addField('#modalName', [
@@ -53,10 +55,15 @@ validation
       rule: 'required',
       errorMessage: 'Введите имя',
     },
+    {
+      rule: 'customRegexp',
+      value: /[а-яА-ЯёЁ]/gi,
+      errorMessage: 'Только кириллица',
+    },
   ])
   .addField('#modalPhone', [
     {
       rule: 'required',
       errorMessage: 'Введите телефон',
     }
-  ])
+  ]);
